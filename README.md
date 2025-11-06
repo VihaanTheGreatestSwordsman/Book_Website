@@ -21,3 +21,46 @@
   <script src="script.js"></script>
 </body>
 </html>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: #222;
+  padding: 20px;
+}
+
+#fileInput {
+  margin-top: 10px;
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+img {
+  max-width: 90%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+pre {
+  text-align: left;
+  background: #222;
+  padding: 20px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  width: 80%;
+}
