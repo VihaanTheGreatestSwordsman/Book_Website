@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manga & Book Reader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 My Manga & Book Reader</h1>
+    <input type="file" id="fileInput" accept="image/*,.txt,.pdf" multiple />
+  </header>
+
+  <main id="viewer"></main>
+
+  <!-- Library / Gallery -->
+  <section id="library" class="library">
+    <h2>Library</h2>
+
+    <div class="controls">
+      <input id="search" placeholder="Search by title, author or tag..." />
+      <div class="filters">
+        <button class="filter active" data-type="all">All</button>
+        <button class="filter" data-type="book">Books</button>
+        <button class="filter" data-type="manga">Manga</button>
+      </div>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <!-- Reader modal -->
+  <div id="reader" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeReader" class="close">×</button>
+      <div id="readerHeader"></div>
+
+      <div id="bookView" class="view hidden">
+        <div id="bookText" class="book-text"></div>
+      </div>
+
+      <div id="mangaView" class="view hidden">
+        <div class="manga-viewer">
+          <button id="prevPage" class="nav">‹ Prev</button>
+          <img id="mangaImage" src="" alt="manga page" />
+          <button id="nextPage" class="nav">Next ›</button>
+        </div>
+        <div id="pageIndicator" class="page-indicator"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 MyMangaReader | Legal Content Only</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
